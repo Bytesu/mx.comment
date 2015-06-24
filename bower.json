@@ -1,0 +1,24 @@
+{
+  "name": "mx.comment",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Bytesu/mx.comment",
+  "authors": [
+    "btyesu <byte2147483648@163.com>"
+  ],
+  "description": "comment",
+  "main": "index",
+  "keywords": [
+    "comment"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

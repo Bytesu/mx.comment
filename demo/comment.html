@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font: 400 14px/1.5 "Hiragino Sans GB", "WenQuanYi Micro Hei", tahoma, sans-serif;
+            color: #666;
+            background-color: #fff;
+            padding: 100px !important;
+        }
+
+        .fn-tc {
+            text-align: center;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        .fn-ct-ctner {
+            width: 800px;
+            padding: 5px;
+            margin: 0 auto;;
+            border: 1px solid #eeeeee;
+        }
+
+        .fn-ct-item {
+            border-bottom: 1px dotted #ddd;
+            padding: 20px 10px 10px;
+            color: #222;
+            font-size: 12px
+        }
+
+        .fn-ct-lefter {
+            width: 90px;
+            height: 100px;
+            margin-right: 10px;
+            float: left;
+        }
+
+        .fn-ct-main {
+            margin-left: 100px;
+            min-height: 100px;;
+        }
+
+        .fn-ct-thumbnail {
+            overflow: hidden;
+        }
+
+        .fn-ct-thumbnail ul {
+            white-space: nowrap;
+        }
+
+        .fn-ct-thumbnail ul li img {
+            min-height: 100px;
+            min-width: 100px;;
+        }
+
+        .fn-ct-thumbnail ul li a.pic-thumbnail {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            display: block;
+        }
+
+        .fn-ct-thumbnail ul li {
+            display: inline-block;
+            margin: 0 2px;
+            border: 2px solid transparent;
+        }
+
+        .fn-ct-thumbnail ul li:hover {
+            border: 2px solid mediumvioletred;
+        }
+        .fn-ct-img-preview{
+            position: relative;
+            min-height: 250px;
+            _height: 250px;
+            text-align: center;
+            background: url(http://s1.meituan.net/fecore/w-carousel/assets/skins/img/bg-tile.vf0fcf7c4.png);
+        }
+
+        .widget-carousel-previews .widget-carousel-nav-link {
+            position: absolute;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            _height: 250px;
+            opacity: 0;
+            background-color: #FFF;
+            filter: alpha(opacity=0);
+        }
+        .widget-carousel-previews .widget-carousel-nav-next {
+            right: 0;
+            cursor: url(http://s1.meituan.net/fecore/w-carousel/assets/skins/img/cursor-rate-pic-next.v7c48f9ee.png),url(http://s1.meituan.net/fecore/w-carousel/assets/skins/img/cursor-rate-pic-next.cur),auto;
+        }
+        .widget-carousel-previews .widget-carousel-nav-prev {
+            left: 0;
+            cursor: url(http://s0.meituan.net/fecore/w-carousel/assets/skins/img/cursor-rate-pic-prev.v819e03bc.png),url(http://s1.meituan.net/fecore/w-carousel/assets/skins/img/cursor-rate-pic-prev.cur),auto;
+        }
+    </style>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../src/index.js"></script>
+    <title></title>
+</head>
+<body>
+<section class="fn-ct-ctner">
+    <ul>
+        <li class="fn-ct-item">
+            <div class="fn-ct-lefter">
+                <div class="fn-tc">
+                    <img src="http://p1.meituan.net/40.40/avatar/__45646677__5806005.jpg"
+                         id="yui_3_16_0_1_1435108449619_21420">
+                </div>
+                <p class="fn-tc">喜小</p>
+            </div>
+            <div class="fn-ct-main">
+                <p>
+                    2015-06-21
+                </p>
+
+                <div>
+                    <p>这是我第一次这么认真的来写评价，希望能给别人一点帮助。首先拍摄前一&nbsp;天有联系我们告诉拍摄需要注意的问题，到店里选了衣服，帮助选衣服的小妹&nbsp;也很有耐心帮忙推荐。年前年底拍的，化妆师和摄像，对人都很好。不过当时&nbsp;天气太冷，由于怕冷我的只拍了2套外景，早上十点多开始拍外景（浐灞沿线&nbsp;）的，加上内景全部拍完，是下午7点半的样子就结束了，没有想像的那么累&nbsp;。整个服务流程都很满意，服务挺好，拍的也不错，这让我们很满意！由于&nbsp;婚期比较急，商家帮忙加急先取了海报和放大的框，这点很感谢，剩下的相册&nbsp;只好现在才取了，附上几张照片，拍的还是很不错的！推荐！</p>
+
+                    <div class="fn-ct-thumbnail">
+                        <ul class="pic-thumbnail-list ">
+                            <li data-src="http://p0.meituan.net/w.h/shaitu/596e10520b86a40746f3522a62781c0077164.png">
+                                <a class="pic-thumbnail" href="#" hidefocus="true">
+                                    <img src="http://p0.meituan.net/126.126/shaitu/596e10520b86a40746f3522a62781c0077164.png">
+                                </a>
+                            </li>
+                            <li data-src="http://p0.meituan.net/w.h/shaitu/37b4b12bcb0e70a764930cffbb48cdcd50616.png">
+                                <a class="pic-thumbnail" href="#" hidefocus="true">
+                                    <img src="http://p0.meituan.net/126.126/shaitu/37b4b12bcb0e70a764930cffbb48cdcd50616.png">
+                                </a>
+                            </li>
+                            <li data-src="http://p1.meituan.net/w.h/shaitu/acbb82158128e208788ae976d729447d59537.png">
+                                <a class="pic-thumbnail" href="#" hidefocus="true">
+                                    <img src="http://p1.meituan.net/126.126/shaitu/acbb82158128e208788ae976d729447d59537.png">
+                                </a>
+                            </li>
+                            <li data-src="http://p1.meituan.net/w.h/shaitu/469f9de2c135d870baf269021f48817741873.png">
+                                <a class="pic-thumbnail" href="#" hidefocus="true">
+                                    <img src="http://p1.meituan.net/126.126/shaitu/469f9de2c135d870baf269021f48817741873.png">
+                                </a>
+                            </li>
+                            <li data-src="http://p1.meituan.net/w.h/shaitu/3e9bd8b8c8ff9e3f76156e4959290eeb38055.png"
+                                id="yui_3_16_0_1_1435108449619_21853">
+                                <a class="pic-thumbnail" href="#" hidefocus="true" id="yui_3_16_0_1_1435108449619_21852"
+                                   data-mod-mtt="1.shop/default.0.0.iba2imol">
+                                    <img src="http://p1.meituan.net/126.126/shaitu/3e9bd8b8c8ff9e3f76156e4959290eeb38055.png"
+                                         id="yui_3_16_0_1_1435108449619_21851">
+                                </a>
+                            </li>
+                            <li data-src="http://p0.meituan.net/w.h/shaitu/81983f07f11037c8ee64d6ee6143516f40103.png">
+                                <a class="pic-thumbnail" href="#" hidefocus="true">
+                                    <img src="http://p0.meituan.net/126.126/shaitu/81983f07f11037c8ee64d6ee6143516f40103.png">
+                                </a>
+                            </li>
+                            <li data-src="http://p1.meituan.net/w.h/shaitu/01f17129c0c670d7154d93fd6111433539867.png"
+                                id="yui_3_16_0_1_1435108449619_21874">
+                                <a class="pic-thumbnail" href="#" hidefocus="true" id="yui_3_16_0_1_1435108449619_21873"
+                                   data-mod-mtt="1.shop/default.0.0.iba2imol">
+                                    <img src="http://p1.meituan.net/126.126/shaitu/01f17129c0c670d7154d93fd6111433539867.png"
+                                         id="yui_3_16_0_1_1435108449619_21872">
+                                </a>
+                            </li>
+                            <li data-src="http://p1.meituan.net/w.h/shaitu/34b7dfb3eb8b12af7bfc1dbac92f898d45337.png">
+                                <a class="pic-thumbnail" href="#" hidefocus="true">
+                                    <img src="http://p1.meituan.net/126.126/shaitu/34b7dfb3eb8b12af7bfc1dbac92f898d45337.png">
+                                </a>
+                            </li>
+                            <li data-src="http://p1.meituan.net/w.h/shaitu/c9c25d33f85ba4515b79677e9884494553208.png">
+                                <a class="pic-thumbnail" href="#" hidefocus="true">
+                                    <img src="http://p1.meituan.net/126.126/shaitu/c9c25d33f85ba4515b79677e9884494553208.png">
+                                </a>
+                            </li>
+                            <li data-src="http://p1.meituan.net/w.h/shaitu/ab1f91f1df14cb1342e12c4c255158fe57675.png">
+                                <a class="pic-thumbnail" href="#" hidefocus="true">
+                                    <img src="http://p1.meituan.net/126.126/shaitu/ab1f91f1df14cb1342e12c4c255158fe57675.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fn-ct-img-preview">
+                        <a href="#" hidefocus="true" class="widget-carousel-nav-link  widget-carousel-nav-prev prev" ></a>
+                        <a href="#" hidefocus="true" class="widget-carousel-nav-link widget-carousel-nav-next next" ></a>
+                        <img src="http://p0.meituan.net/668.500/shaitu/596e10520b86a40746f3522a62781c0077164.png"
+                             data-idx="0" hidden="hidden" style="display: none;">
+                        <img src="http://p0.meituan.net/668.500/shaitu/37b4b12bcb0e70a764930cffbb48cdcd50616.png"
+                             data-idx="1">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-idx="2"
+                             hidden="hidden" style="display: none;">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-idx="3"
+                             hidden="hidden" style="display: none;">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-idx="4"
+                             hidden="hidden" style="display: none;">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-idx="5"
+                             hidden="hidden" style="display: none;">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-idx="6"
+                             hidden="hidden" style="display: none;">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-idx="7"
+                             hidden="hidden" style="display: none;">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-idx="8"
+                             hidden="hidden" style="display: none;">
+                        <img src="http://p1.meituan.net/668.500/shaitu/ab1f91f1df14cb1342e12c4c255158fe57675.png"
+                             data-idx="9" hidden="hidden" style="display: none;">
+                    </div>
+                    <p><a href="#">与为***</a></p>
+
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</section>
+</body>
+</html>
